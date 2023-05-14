@@ -48,6 +48,7 @@ body {
       display: flex;
       flex-direction: row;
       justify-content: space-between;
+      flex-wrap: wrap;
       background-color: $primarycolor;
     }  
 
@@ -62,14 +63,15 @@ body {
 .landing-container {
   background-color: $primarycolor;
   height: 860px;
+  width: 100%;
 }
 
 
 .landing-image {
+  height: 100%;
   width: 100%;
-  height: 860px;
   object-fit: cover;
-  position: relative;
+  object-position: center;
   opacity: 0.75;
 }
 
@@ -111,7 +113,7 @@ body {
   opacity: 0.7;
 }
 
-/* My Picture and my Presentation + CV */ 
+/* My Presentation + CV */ 
 
 .about-container {
   height: 450px;
@@ -212,10 +214,11 @@ hr {
 
 .svg-skills-container{
   height: 150px;
-  width: 100%;
+  width: 80%;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+  align-items: center;
   background-color: $secondarycolor;
   padding-bottom: 80px;
 }
@@ -255,11 +258,14 @@ hr {
 /* step5 = i miei progetti  */
 
 .portfolio {
+  height: auto;
+  width: 100%;
+
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
-
-  height: 450px;
+  margin: 0;
 
   background-color: $secondarycolor;
   color: $primarycolor;
@@ -273,10 +279,10 @@ hr {
   }
 
   .portfolio-text {
+    display: inline-block;
     padding-top: 30px;
     padding-bottom: 10px;
     font-size: 20px;
-    width: 500px;
     background-color: $secondarycolor;
     color: $primarycolor;
     text-align: center;
@@ -372,39 +378,112 @@ hr {
 
 /* Media Query */
 
-@media (max-width: 830px) {
+@media screen and (max-width: 600px) {
+
+
+    hr {
+      margin-top: 60px;
+      margin-bottom: 60px;
+    }
+  
+    .name { 
+      font-weight: bold;
+      font-size: 18px;
+      margin-left: 10px;
+      cursor: pointer;
+      background-color: $primarycolor;
+    }
+
+    .landing-container {
+      height: 650px;
+    }
+
+    .landing-paragraph {
+        h1 {
+        font-size: 56px;
+      }
+      h3 {
+        font-size: 32px;
+      }
+    }
+      
+
+    .link-header {
+      padding-right: 30px;
+      width: 350px;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      background-color: $primarycolor;
+    } 
+  
+
 
   .about-container {
   height: auto;
   width: auto;
-}
+  }
+
   .bio-container {
     height: auto;
   
     display: flex;
     flex-direction: column;
-    align-items: space-around;
     justify-content: center;
+  }
+
+  .bio-paragraph {
+    width: 80%;
   }
 
   .bio-svg2 {
     display: none;
   }
 
+  .my-skills {
+    width: 80%; 
+  }
+
+  .skills-paragraph {
+    width: 80%;
+  }
+
+  .skills-container {
+    height: auto;
+  }
+
+  .skills-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+
   .svg-skills-container{
   height: auto;
-  width: 100%;
+  width: 80%;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
   background-color: $secondarycolor;
-  padding-bottom: 80px;
+  padding-bottom: 40px;
 
   flex-wrap: wrap;
   row-gap: 40px;
   column-gap: 20px;
 }
+
+.portfolio-text {
+  width: 80%;
 }
+
+.contatti-text {
+  width: 80%;
+}
+
+
+}
+
 
 
 
