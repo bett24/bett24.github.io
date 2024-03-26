@@ -329,20 +329,21 @@ hr {
   text-align: center;
 }
 
-.contattami-button {
-  background-color: $primarycolor;
-  margin-top: 36px;
+.text-input{
+  color: #1d1d20;
   font-family: 'Raleway', sans-serif;
   font-weight: bold;
   font-size: 16px;
   padding: 16px 24px;
   border-radius: 32px;
   border: solid 1.5px;
+  border-color:#3e3e3f;
+  border-width: 2px;
   cursor: pointer;
 }
 
-.contattami-button:hover {
-  opacity: 0.7;
+.form-contatti {
+  margin: 26px;
 }
 
 
@@ -374,6 +375,55 @@ hr {
     font-weight: bold;
   }
 }
+
+/* Curriculum Vitae*/
+
+.cv-container {
+  display: block;
+  margin: 80px 0px;
+  padding: 0px 250px;
+  
+}
+
+.cv-title {
+  padding: 0px 30px 30px 0px;
+  font-size: 46px;
+  font-weight: bold;
+  text-align: left;
+  background-color: $secondarycolor;
+  color: $primarycolor;
+
+  strong {
+    background-color: $secondarycolor;
+    color: $primarycolor;
+  }
+}
+
+.cv-info {
+  font-size: 16px;
+  background-color: $secondarycolor;
+  color: $primarycolor;
+  text-align: left;
+  padding-bottom: 30px;
+
+  strong {
+    background-color: $secondarycolor;
+    color: $primarycolor;
+  }
+}
+.cv-text {
+  
+  font-size: 20px;
+  background-color: $secondarycolor;
+  color: $primarycolor;
+  text-align: left;
+
+  strong {
+    background-color: $secondarycolor;
+    color: $primarycolor;
+  }
+}
+
 
 
 /* Media Query */
